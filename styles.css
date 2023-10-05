@@ -56,9 +56,13 @@ section {
 }
 
 /* Header Logo(Name) */
-.header-logo { 
-  height: 8vh;
+#header-logo { 
+  font-size: 45px;
   margin: 10px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bolder;
+  padding-left: 15px;
 }
 
 /* About Me Section */
@@ -212,9 +216,7 @@ h1 {
     font-size: 20px;
     text-align: center;
   }
-  .header-logo { 
-    height: 7vh;
-  }
+  
   #main-photo {
     height: 40vh;
     display: block;
