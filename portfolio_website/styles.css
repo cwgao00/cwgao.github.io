@@ -65,19 +65,17 @@ section {
   padding-left: 15px;
 }
 
-/* About Me Section */
-#welcome-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Home Section */
+#home-section {
   width: auto;
-  height: 100vh;
+  min-height: 200px;
   background-color: var(--white);
 }
 
-.content {
+.intro {
   display: flex;
   align-items: center;
+  padding: 200px 100px;
 }
 
 #main-photo {
@@ -86,7 +84,7 @@ section {
   border-radius: 10%;
 }
 
-.text {
+.intro-text {
   display: flex;
   flex-direction: column;
 }
@@ -100,12 +98,176 @@ h1 {
   color: var(--melon);
 }
 
-.text h3 {
+.intro-text h3 {
   font-size: 25px;
   margin: 0;
   font-style: italic;
   font-weight: lighter;
   text-align: left;
+}
+
+/* Home Section - Project Spotlight */
+.project-spotlight {
+  text-align: center;
+}
+
+.project-spotlight h2 {
+  font-weight: bold;
+}
+
+.project-spotlight h3 {
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.spotlight-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.spotlight-project-tile {
+  background-color: var(--gray);
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.spotlight-project-image {
+  height: 200px;
+  padding-top: 10px;
+}
+
+.spotlight-project-title{
+  font-size: 20px;
+  color: var(--white);
+}
+
+.spotlight-project-description {
+  color: var(--white);
+  text-align: left;
+  padding: 20px;
+}
+
+.more-button {
+  align-items: center;
+  background-color: var(--silver);
+  border-radius: 8px;
+  color: #111;
+  cursor: pointer;  
+  font-size: 15px;
+  height: 45px;
+  padding: 0 20px;
+  max-width: 100%;
+  text-align: center;
+  margin: 15px auto 0px auto;
+}
+
+.more-button:hover {
+  background-color: var(--melon);
+  color: var(--white);
+}
+
+#contacts-section-home {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  padding: 20px;
+}
+
+/* About Me Section */
+#about-section, #values-section {
+  padding-top: 100px;
+  min-height: 400px;
+  width: auto;
+  background-color: var(--white);
+}
+
+#about-section h1 { 
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.info-block-1 p {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  padding: 10px 15px;
+}
+
+#about-photo-1 {
+  height: 50vh;
+  border-radius: 10%;
+  float: right;
+  padding-right: 30px;
+}
+
+.info-block-2 h2 {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.info-block-2 p {
+  font-size: 20px;
+  padding: 10px 15px;
+}
+
+.info-block-2 ul {
+  display: inline-block;
+  padding-left: 50px;
+}
+
+.info-block-2 ul li{
+  font-size: 20px;
+  text-align: left
+}
+
+#about-photo-2 {
+  height: 50vh;
+  border-radius: 10%;
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#values-section { 
+  padding-top: 0;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#values-section h3 {
+  font-weight: lighter;
+  font-style: oblique;
+}
+
+.values h3 {
+  text-decoration: underline;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+}
+
+.values {
+  background-color: var(--silver);
+  padding: 30px 50px;
+  margin: 0 300px 0 300px;
+  font-size: 20px; 
+  border-radius: 30px;
 }
 
 /* Projects Section */
@@ -116,9 +278,10 @@ h1 {
   overflow: hidden;
 }
 
-#project-section h2 { 
-  padding-top: 20px;
-  font-size: 30px;
+#project-section h1 { 
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
 }
 
 #project-section h3 { 
@@ -171,11 +334,11 @@ h1 {
 #contacts-section {
   background-color: var(--white);
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 50px;
+  height: 100vh;
   padding: 20px;
 }
 
@@ -208,6 +371,11 @@ h1 {
     display: grid;
     text-align: center;
   }
+
+  .more-button {
+    padding: 0 30px;
+  }
+
   h1 {
     font-size: 40px;
     text-align: center;
@@ -223,7 +391,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
   }
-  .content {
+  .intro {
     display: grid;
   }
   .project-grid {

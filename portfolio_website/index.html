@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Personal Portfolio For Christina Gao">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Christina Gao's Personal Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+      </head>
+      
+      <body> 
+        <!--Top Navigation Bar --> 
+        <nav id="navbar">
+            <a href="https://cwgao00.github.io" id="header-logo">CHRISTINA</a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about_me.html">ABOUT ME</a></li>
+                <li><a href="projects.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!--Home Section --> 
+        <section id="home-section">
+        <div class="intro">
+          <img id="main-photo"
+            src="images/grad_photo_1.jpg" 
+            alt="grad_photo"/>
+          <div class="intro-text">
+            <h1>Hi, I'm <span class="name">Christina Gao</span></h1>
+            <h3>Aspiring to Drive Innovation and Impact Through Data Analytics</h3>
+            <h3>Bachelors of Science in Technology Information Management & Minor in Economics</h3>
+          </div>
+        </div>
+
+        <!--Project Spotlight--> 
+        <div class="project-spotlight">
+            <h2>Data Analysis Portfolio Showcase</h2>
+            <h3>Explore my most recent data-driven projects</h3>
+            <div class="spotlight-grid">
+                <!-- Project 1 -->
+                    <a
+                        href="game_sales_dashboard/video_game_sales.pbix"
+                        target="_blank"
+                        class="spotlight-project-tile">
+                    <img
+                        class="spotlight-project-image"
+                        src="game_sales_dashboard/gaming_pic.gif"
+                        alt="project"/>
+                    <p class="spotlight-project-title">Video Game Sales Dashboard <br>(Power BI)</p>
+                    <p class="spotlight-project-description">I developed a dynamic data visualization dashboard using a comprehensive video game sales dataset sourced from Kaggle. Through this project, 
+                        I conducted an in-depth analysis of the top-performing video games and platforms based on global sales. The dashboard offers a user-friendly
+                        interface to explore these insights and provides an interactive platform for gaining valuable information about the video game industry. </p>
+                    </a>
+                <!-- Project 2 -->
+                    <a
+                        href="time_series_analysis/time_series_visualizer.html"
+                        target="_blank"
+                        class="spotlight-project-tile">
+                    <img
+                        class="spotlight-project-image"
+                        src="time_series_analysis/time_series_img.png"
+                        alt="project"/>
+                    <p class="spotlight-project-title">Page View Time Series Visualizer <br>(Google Colab/Python3/Pandas/Matplotlib/Seaborn)</p>
+                    <p class="spotlight-project-description">Visualized time series data using Pandas, Matplotlib, and Seaborn, revealing patterns and growth in daily page views on the freeCodeCamp.org forum from 2016-05-09 to 2019-12-03. 
+                        Implemented functions to draw line charts, bar charts, and box plots for in-depth data analysis and visualization.</p>
+                    </a>
+                <!-- Project 3 -->
+                    <a
+                        href="demographic_data_analysis/Demographic_Analyzer.ipynb"
+                        target="_blank"
+                        class="spotlight-project-tile">
+                    <img
+                        class="spotlight-project-image"
+                        src="demographic_data_analysis/demo_photo.jpg"
+                        alt="project"/>
+                    <p class="spotlight-project-title">Data Analysis of Demographic Trends Using Pandas <br>(Jupyter Notebook/Python3/Pandas)</p>
+                    <p class="spotlight-project-description">In this project, I undertook the task of dissecting demographic data using the powerful Python library, Pandas. 
+                        My objective was to gain insights from a dataset sourced from the 1994 Census database, offering a snapshot of societal characteristics during that period.</p>
+                    </a>
+                <!-- Project 4 -->
+                    <a
+                        href="medical_data_analysis/medical_data_visualizer.ipynb"
+                        target="_blank"
+                        class="spotlight-project-tile">
+                    <img
+                        class="spotlight-project-image"
+                        src="medical_data_analysis/heatmap.png"
+                        alt="product page project"/>
+                    <p class="spotlight-project-title">Medical Data Visualizer <br>(Jupyter Notebook/Python3/Pandas/Matplotlib/Seaborn)</p>
+                    <p class="spotlight-project-description">In this project, I analyzed medical examination data using matplotlib, seaborn, and pandas. 
+                        The dataset comprises patient data which I used to explore the relationship between cardiac disease and other factors.</p>
+                    </a>
+            </div>
+            <button class="more-button" role="button" onClick="location.href='projects.html'">View More Here</button>
+        </div>
+      </section>
+      
+      <!--Contacts Section--> 
+    <section id="contacts-section-home">
+        <div class="social-icons">
+            <a
+              id="profile-link"
+              href="https://github.com/cwgao00"
+              target="_blank"
+              class="button contact-details">
+              <i class="fab fa-github"></i> GitHub</a>
+            <a 
+              id="profile-link"
+              href="https://linkedin.com/in/christinagao1"
+              target="_blank"
+              class="button contact-details">
+              <i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a 
+              id="profile-link"
+              href="mailto:christina.gao00@gmail.com"
+              target="_blank"
+              class="button contact-details">
+              <i class="fas fa-at"></i> Email</a>
+          </div>
+          <p><br>© 2023 Christina Gao</p>
+      </section>
+    </body>
+</html>
